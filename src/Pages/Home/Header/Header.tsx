@@ -12,10 +12,10 @@ export default function Header() {
         {
             <TypewriterComponent onInit={(typewriter) => {
                 typewriter
-                    .typeString("city tour in luxury river cruise")
+                    .typeString("40% off on private compartment")
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("40% off on private compartment")
+                    .typeString("city tour in luxury river cruise on 26th march.")
                     .start();
             }}></TypewriterComponent>
         }
