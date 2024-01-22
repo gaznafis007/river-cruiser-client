@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Title from "../../Components/Title";
-import Modal from "../../Components/Modal";
+import Title from "../../../Components/Title";
+import Modal from "../../../Components/Modal";
 
 export interface IShip {
     shipName:string,
@@ -18,8 +18,8 @@ export default function Ships() {
         .catch(error=>console.error(error))
     },[])
   return (
-    <>
-        <Title>Our Ships</Title>
+    <section id="our-cruisers">
+        <Title>Our Cruisers</Title>
         <div className="my-5 mx-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-content-center place-items-center">
             {
                 ships.map((ship:IShip,idx)=>(
@@ -46,6 +46,6 @@ export default function Ships() {
             </div>
         </div>
         </div> */}
-    </>
+    </section>
   )
 }

@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 
  function Main() {
   return (
-    <div>
+    <div className="scroll-smooth">
         <Navbar/>
         <Outlet/>
         <Footer/>
