@@ -2,7 +2,8 @@ import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
     const navItems = <>
-    <li><NavLink className={({isActive})=> isActive ? 'border-b-2 border-blue-400 p-2 capitalize text-xl inline-block rounded-none text-blue-600' : "text-blue-400 capitalize"} to="#event-details">event details</NavLink></li>
+    <li><NavLink className={({isActive})=> isActive ? 'border-b-2 border-blue-400 p-2 capitalize text-xl inline-block rounded-none text-blue-600' : "text-blue-400 capitalize"} to="/">Home</NavLink></li>
+    <li><NavLink className={({isActive})=> isActive ? 'border-b-2 border-blue-400 p-2 capitalize text-xl inline-block rounded-none text-blue-600' : "text-blue-400 capitalize"} to="/event-details">event details</NavLink></li>
     <li><NavLink className={({isActive})=> isActive ? 'border-b-2 border-blue-400 p-2 capitalize text-xl inline-block rounded-none text-blue-600' : "text-blue-400 capitalize"} to="/guest">guest list</NavLink></li>
     <li><NavLink className={({isActive})=> isActive ? 'border-b-2 border-blue-400  p-2 capitalize text-xl inline-block rounded-none text-blue-600' : "text-blue-400 capitalize"} to="/contactUs">contact us</NavLink></li>
     </>
@@ -18,7 +19,7 @@ export default function Navbar() {
         {navItems}
       </ul>
     </div>
-    <Link to="/" className="text-2xl text--500 font-semibold">Cruiser 71</Link>
+    <Link to="/" className="text-2xl text-sky-500 font-semibold">Cruiser 71</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

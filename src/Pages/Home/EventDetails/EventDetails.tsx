@@ -1,5 +1,5 @@
 import Title from '../../../Components/Title'
-import ship from '../../../../public/ship-2.jpg'
+import ship from '../../../assets/ship-2.jpg'
 
 export default function EventDetails() {
   return (

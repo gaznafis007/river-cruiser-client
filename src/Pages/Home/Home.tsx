@@ -1,6 +1,7 @@
 import Ships from "./Ships/Ships";
 import Header from "./Header/Header";
 import EventDetails from "./EventDetails/EventDetails";
+import GuestList from "./GuestList/GuestList";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Header/>
         <Ships/>
         <EventDetails/>
+        <GuestList/>
     </>
   )
 }

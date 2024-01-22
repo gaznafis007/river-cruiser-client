@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import Title from "../../../Components/Title";
 import Modal from "../../../Components/Modal";
+import CardSkeleton from "../../../Components/CardSkeleton";
+
+
 
 export interface IShip {
     shipName:string,
@@ -11,12 +14,25 @@ export interface IShip {
 
 export default function Ships() {
     const [ships,setShips] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
     useEffect(()=>{
-        fetch("data.json")
+        fetch('data.json')
         .then(res=>res.json())
-        .then((data)=>setShips(data))
+        .then((data)=>{
+            setShips(data)
+            setIsLoading(false)
+        })
         .catch(error=>console.error(error))
     },[])
+    if(isLoading){
+        return(
+            <div className="my-5 mx-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-content-center place-items-center">
+                <CardSkeleton/>
+                <CardSkeleton/>
+                <CardSkeleton/>
+            </div>
+        )
+    }
   return (
     <section id="our-cruisers">
         <Title>Our Cruisers</Title>
@@ -26,7 +42,9 @@ export default function Ships() {
                     <>
                         <label htmlFor={ship.shipName} className="cursor-pointer">
                         <div  key={idx}>
-                            <img src={ship.img} alt="river cruiser" className="aspect-square h-full" />
+                            <figure>
+                            <img src={ship.img} alt="river cruiser" className="aspect-square" />
+                            </figure>
                         </div>
                         </label>
                         <Modal modalElement={ship}></Modal>

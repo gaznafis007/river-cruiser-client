@@ -2,26 +2,26 @@
     {
         "shipName": "Standard Cruiser",
         "description": "this is a starter cruiser of Cruiser 71.",
-        "img": "./ship-1.jpg"
+        "img": "../src/assets/ship-1.jpg"
     },
     {
         "shipName": "Extra Standard Cruiser",
         "description": "this is a pro starter cruiser of Cruiser 71.",
-        "img": "./ship-2.jpg"
+        "img": "../src/assets/ship-2.jpg"
     },
     {
         "shipName": "Standard Cruiser Plus",
         "description": "this is a starter plus cruiser of Cruiser 71.",
-        "img": "./ship-3.jpg"
+        "img": "../src/assets/ship-3.jpg"
     },
     {
         "shipName": "Premium Cruiser",
         "description": "this is a premium cruiser of Cruiser 71.",
-        "img": "./ship-4.jpg"
+        "img": "../src/assets/ship-4.jpg"
     },
     {
         "shipName": "Platinum Cruiser",
         "description": "this is the most luxury cruiser of Cruiser 71.",
-        "img": "./ship-5.jpg"
+        "img": "../src/assets/ship-5.jpg"
     }
 ]
